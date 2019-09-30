@@ -28,10 +28,10 @@ if conditionTwo {
 print("D")
 ```
 
-- A
+- A <-
 - B
-- C
-- D
+- C <-
+- D <-
 
 ***
 ## Question 2
@@ -51,8 +51,8 @@ switch appInfo {
 ```
 
 - appInfo.0 hasn't released yet
-- myCoolApp hasn't released yet
-- Thanks for looking at myCoolApp!
+- myCoolApp hasn't released yet <-
+- Thanks for looking at myCoolApp! 
 - I'm not quite sure what you are looking at
 - It will give a compile-time error
 
@@ -78,7 +78,7 @@ default:
 - A
 - B
 - C
-- D
+- D <-
 
 ***
 ## Question 4
@@ -100,7 +100,7 @@ case "snickers":
 
 - No parentheses around the conditions
 - No opening and closing brackets in each of the cases
-- No default case in the switch statement
+- No default case in the switch statement <-
 - No print statement right outside the switch statement
 
 ***
@@ -112,6 +112,10 @@ Given the current weather conditions (rain, sunny, snow), use a switch statement
 let currentWeather = "rain"
 
 // enter code below
+```
+Answer
+```
+
 ```
 
 ***
@@ -248,16 +252,20 @@ case 42:
 default:
  print("Some uninteresting number")
 ```
+Answer
+```
+The system should print "The answer to life, the universe and everything."
+```
 What happens when you change number to:
 
 -a. 365?
-
+The system will print  "Days in year."
 -b. 1024?
-
+THe system will print "Bytes in a Kilobyte."
 -c. 65?
-
+The system will not print anything.
 What happens when you remove the default clause?
-
+If the default clause is removed there will be an error within the syntax, in order for the switch to work there must be a default clause.
 ***
 
 
