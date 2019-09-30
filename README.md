@@ -115,7 +115,18 @@ let currentWeather = "rain"
 ```
 Answer
 ```
+let currentWeather = "rain"
 
+switch currentWeather {
+case "sunny":
+print("it is very sunny!")
+case "rain":
+print("it is raining...")
+case "snow":
+print("its snowing my dude")
+default:
+print("there is no weather?")
+}
 ```
 
 ***
@@ -128,6 +139,13 @@ let firstName = "John"
 let lastName = "Appleseed"
 
 // enter code below
+```
+Answer
+```
+let firstName = "John"
+let lastName = "Appleseed"
+
+print("\(firstName)'s full name is \(firstName) \(lastName).")
 ```
 
 ***
@@ -148,6 +166,19 @@ if temperatureInFahrenheit <= 40 {
 //Re-written statement here
 
 ```
+Answer
+```
+switch tempatureInFahrenheit {
+case 0..<40:
+print("it's pretty damn cold outside 🥶")
+case 40..<60:
+print("it's still p cold, maybe chilly")
+case 60..<85:
+print("it's warm out")
+default:
+print("NA")
+}
+```
 
 ***
 
@@ -157,6 +188,18 @@ Complete the following code so that "You win!" is printed.
 
 ```swift
 if {
+ print("You win!")
+} 
+else {
+ print("You lose!")
+}
+```
+Answer
+```
+let choiceOne = 40
+let choiceTwo = 39
+
+if choiceOne >= choiceTwo{
  print("You win!")
 } 
 else {
@@ -189,6 +232,21 @@ Output:
 Error
 
 ```
+Answer
+```
+var numberOfSides = 6
+
+switch numberOfSides {
+case 4:
+print("Square")
+case 3:
+print("Triangle")
+case 6:
+print("Hexagon")
+default:
+print("Error")
+}
+```
 ***
 
 ## Question 10
@@ -203,6 +261,25 @@ Numeric Score 	Letter Grade
 70 - 79 	C
 65 - 69 	D
 Below 65 	F
+```
+Answer
+```
+var numericScore = 38
+
+switch numericScore{
+case 100:
+print("A+")
+case 90...99:
+print("A")
+case 80...89:
+print("B")
+case 70...79:
+print("C")
+case 65...69:
+print("D")
+default:
+print("F")
+}
 ```
 ***
 
@@ -220,6 +297,20 @@ if firstName == "Peter" {
 }
 let fullName = firstName + " " + lastName
 ```
+Answer
+```
+let firstName = "Peter"
+
+if firstName == "Peter"{
+_ = "Gabriel"
+} else if firstName == "Phil"{
+_ = "Collins"
+}
+
+let fullName = firstName + " " + lastName
+
+
+```
 ***
 
 ## Question 12
@@ -229,6 +320,19 @@ Write an if statement that prints out what decade of life someone is in (e.g "Yo
 ```swift
 let nameAndBirthYear: (String, Int)
 
+```
+Answer
+```
+let nameAndBirthYear: (String, Int) = ("Brendon", 22)
+
+switch nameAndBirthYear{
+case (_, 20..<30):
+print("You are in your twenties")
+case (_, 30..<40):
+print("You are in your thirties")
+default:
+print("you are dead...")
+}
 ```
 ***
 
